@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello my name is Anhviet Le, I'm a student at Purdue University Northwest.
+Here is my membership tracking app for PNW IEEE members.
 
-Things you may want to cover:
+Currently named: IEEE-PNW CONNECT
 
-* Ruby version
+This app is in alpha stages of development.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sources: I learned Ruby on Rails from a few YouTube video but the most useful and impactful video is "Learn Ruby on Rails - Full Course" by freeCodeCamp.org
