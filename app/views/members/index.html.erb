@@ -1,0 +1,55 @@
+<h1>Purdue University Northwest IEEE Members List</h1>
+
+<% if user_signed_in?%>
+
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Membership Number</th>
+        <th>HKN Status</th>
+        <th>Major</th>
+        <th>Grade Year</th>
+        <th>Expected Graduation Date</th>
+        <th>LinkedIn Username</th>
+        <th>Discord Username</th>
+
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @members.each do |member| %>
+
+        <tr>
+          <td>
+            <%= link_to member.first_name + ' ' + member.last_name, member %>
+          </td>
+          <td><%= member.email %></td>
+          <td><%= member.phone %></td>
+          <td><%= member.ieee_membership_number %></td>
+          <td><%= member.ieee_hkn %></td>
+          <td><%= member.major %></td>
+          <td><%= member.grade_year %></td>
+          <td><%= member.grad_date %></td>
+          <td><%= member.linkedin_username %></td>
+          <td><%= member.discord_username %></td>
+          <td>
+            <%= link_to 'Show', member,  class: "btn btn-outline-danger btn-sm"   %>
+          </td>
+        </tr>
+
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New member', new_member_path, class: "btn btn-secondary" %>
+
+<% else %>
+
+<h4>Welcome to the official Purdue Unviersity Northwest IEEE Members Tracking App!</h4>
+
+<% end %>
