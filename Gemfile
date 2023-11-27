@@ -49,10 +49,6 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
 end
 
-group :production do 
-  gem 'pg', '~> 1.5', '>= 1.5.4'
-end
-
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
@@ -65,6 +61,10 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :production do 
+  gem 'pg', '~> 1.5', '>= 1.5.4' 
 end
 
 group :test do
